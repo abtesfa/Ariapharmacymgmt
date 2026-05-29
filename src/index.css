@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  
+  --color-primary-deep: #0D2E2E;
+  --color-gold-brushed: #C5A021;
+  --color-soft-blue: #E0F2FE;
+  --color-neutral-slate: #F8FAFC;
+  
+  --color-navy-midnight: var(--color-primary-deep);
+  --color-alabaster: var(--color-neutral-slate);
+
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-text: var(--theme-text);
+  --color-theme-border: var(--theme-border);
+  --color-theme-glass: var(--theme-glass);
+}
+
+@layer base {
+  :root {
+    --theme-bg: #FFFFFF;
+    --theme-text: #0D2E2E;
+    --theme-border: rgba(197, 160, 33, 0.2);
+    --theme-glass: rgba(255, 255, 255, 0.7);
+  }
+
+  .dark {
+    --theme-bg: #0D2E2E;
+    --theme-text: #F8FAFC;
+    --theme-border: rgba(197, 160, 33, 0.2);
+    --theme-glass: rgba(13, 46, 46, 0.4);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-theme-bg text-theme-text font-sans antialiased select-none transition-colors duration-500;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif italic;
+  }
+}
+
+.glass {
+  background: var(--theme-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--theme-border);
+}
+
+.glass-gold {
+  background: rgba(197, 160, 33, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 33, 0.3);
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(197, 160, 33, 0.15);
+}
+
+.gold-text {
+  color: var(--color-gold-brushed);
+}
+
+.gold-border {
+  border: 1px solid rgba(197, 160, 33, 0.2);
+}
+
+.gold-border-strong {
+  border: 1px solid var(--color-gold-brushed);
+}
+
