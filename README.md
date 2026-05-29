@@ -1,51 +1,138 @@
-AriaHealth Pharmacy Management System
-Overview
+# 💊 AriaHealth Pharmacy Management System
 
-AriaHealth Pharmacy Management System is a modern pharmacy management solution designed to simplify and automate pharmacy operations. The system helps pharmacies manage medicines, sales, prescriptions, inventory, suppliers, customers, billing, and reports from one centralized platform.
+## 📌 Overview
+AriaHealth Pharmacy Management System is a modern web-based application designed to simplify and automate pharmacy operations. It provides a centralized platform for managing medicines, sales, prescriptions, inventory, suppliers, customers, billing, and reports.
 
-It is built to improve efficiency, reduce manual errors, and enhance healthcare service delivery through secure and reliable digital management.
+The system helps pharmacies improve efficiency, reduce manual errors, and enhance healthcare service delivery through secure and reliable digital management.
 
-Features
-Medicine inventory management
-Sales and billing system
-Prescription management
-Supplier and customer management
-Expiry date and low-stock alerts
-Financial and sales reporting
-Secure authentication and user roles
-Responsive and user-friendly dashboard
-Real-time data management
-Technologies Used
+---
 
-Frontend
+## ✨ Features
 
-React.js
-Vite
-Tailwind CSS
-Backend
+- 📦 Medicine Inventory Management  
+- 💰 Sales and Billing System  
+- 🧾 Prescription Management  
+- 🚚 Supplier and Customer Management  
+- ⚠️ Expiry Date & Low-Stock Alerts  
+- 📊 Financial and Sales Reporting  
+- 🔐 Secure Authentication & Role-Based Access  
+- 📱 Responsive and User-Friendly Dashboard  
+- ⚡ Real-Time Data Management  
 
-Node.js
-Express.js
+---
 
-Database
-MySQL
+## 🛠️ Technologies Used
 
-Project Goals
-Digitize pharmacy operations
-Improve inventory accuracy
-Reduce paperwork and manual tasks
-Enhance reporting and business insights
-Provide secure and scalable pharmacy management
+### Frontend
+- React.js  
+- Vite  
+- Tailwind CSS  
 
-Future Improvements
+### Backend
+- Node.js  
+- Express.js  
 
-Mobile application integration
-Multi-branch pharmacy support
-AI-based inventory forecasting
-Cloud deployment support
+### Database
+- MySQL  
+
+---
+
+## 🎯 Project Goals
+
+- Digitize pharmacy operations  
+- Improve inventory accuracy  
+- Reduce paperwork and manual tasks  
+- Enhance reporting and business insights  
+- Provide secure and scalable pharmacy management  
+
+---
+
+## 📁 Project Structure
+AriaHealthPharmacy/
+│
+├── client/ # Frontend (React + Vite)
+├── server/ # Backend (Node.js + Express)
+├── database/ # SQL files ([text](schema.sql))
+└── README.md
 
 
-Author
+---
 
-Developed by AriaHealth Team.
+## 🚀 Installation & Setup Guide
 
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/abtesfa/Ariapharmacymgmt.git
+
+2️⃣ Open Project in VS Code
+
+cd Ariapharmacymgmt
+code .
+
+3️⃣ Install Dependencies
+📌 Frontend Setup
+cd client
+npm install
+
+📌 Backend Setup
+cd server
+npm install
+
+
+4️⃣ Setup Environment Variables
+
+Create a .env file inside the server folder:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=pharmacy_db
+PORT=5000
+
+5️⃣ Run the Application
+▶️ Start Backend
+cd server
+npm start
+
+▶️ Start Frontend
+cd client
+npm run dev
+
+🌐 Access Application
+Frontend: http://localhost:5173
+Backend: http://localhost:5000
+
+🗄️ Database Setup (MySQL)
+Open MySQL / phpMyAdmin
+Create database:
+CREATE DATABASE pharmacy_db;
+Import your .sql file (if available) into the database
+
+🚀 Future Improvements
+
+📱 Mobile application integration
+🏥 Multi-branch pharmacy support
+🤖 AI-based inventory forecasting
+☁️ Cloud deployment support
+📊 Advanced analytics dashboard
+
+🔐 Security Features
+
+Role-based authentication (Admin / Pharmacist / Staff)
+Secure API handling
+Protected routes
+Password encryption (recommended: bcrypt)
+
+👨‍💻 Author
+
+Developed by AriaHealth Team
+
+⭐ Notes
+Ensure Node.js (LTS version) is installed
+Ensure MySQL server is running before starting backend
+Always run npm install before starting project
+Keep .env file private (do NOT upload to GitHub)
+
+🎉 Thank You
+
+This system is built to improve pharmacy operations and healthcare efficiency through digital transformation.
